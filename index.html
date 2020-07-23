@@ -12,12 +12,13 @@
   	</div>
   	<script type="text/babel">
   		let root = document.getElementById('root');
-  		//let el = React.createElement('h1',null,'React By Nazmul Hossain');
+  		let title = 'React By Nazmul Hossain';
+  		let h1 =  (<h1>
+  					<span>{title}</span>
+  				</h1>);
   		let ell = (<section>
   			<div>
-  				<h1>
-  					<span>React By Nazmul Hossain</span>
-  				</h1>
+  				{h1}
   			</div>
   		</section>);
   		ReactDOM.render(ell,root);
